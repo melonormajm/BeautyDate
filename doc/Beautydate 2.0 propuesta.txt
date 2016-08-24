@@ -1,0 +1,27 @@
+Beutydate 2.0
+	Backend
+		Gestion de estilistas:
+			-Crear , modifica, eliminar, estilista
+			-Asociar estilistas con servicios
+			-Asignar horarios de trabajo al estilista. Dias de la semana y horarios del dia. Crear, modificar y eliminar
+			-Sacar vacaciones a cada estilista, crear, modificar y eliminar
+		
+		Modificar el proceso de reservaacion.
+			-Reservacion por horario: El cliente escoge el salon, el servicio, el horario, y el estilista que este disponible.
+			-Reservacion por estilista: El cliente escoge el salon, el servicio, le aparece la lista de estilistas que trabajan
+			en el salon y la persona escoje con quien quiere hacerse el servicio. 
+	App
+		Modificar el proceso de reservaacion.
+			-Reservacion por horario: El cliente escoge el salon, el servicio, el horario, y el estilista que este disponible.
+			-Reservacion por estilista: El cliente escoge el salon, el servicio, le aparece la lista de estilistas que trabajan
+			en el salon y la persona escoje con quien quiere hacerse el servicio. 
+		
+		Modificaciones
+			- Que en una de las versiones pasadas, al finalizar la reservacion te aparecía un popup que decia "Reserva realizada"
+			o algo así, y te mandaba a la sección de Reservaciones, para que la vieras. Estaba en una de las versiones anteriores
+			pero se quitó de la final, para que por favor lo vuelvan a incluir
+
+			- Cuando el salon va a hacer una reservacion manualmente en su calendario (por ejemplo si el cliente llamo por telefono
+			para hacer la reservacion), en la ventana que se abre, que haya un campo para poner el celular del cliente que está 
+			haciendo la reservacion, en caso de que el salon tenga que hablarle por alguna razon
+			
