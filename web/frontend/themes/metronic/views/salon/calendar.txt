@@ -1,0 +1,78 @@
+<div class="portlet box green-meadow calendar">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="fa fa-gift"></i>Calendario
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <!-- BEGIN DRAGGABLE EVENTS PORTLET-->
+
+                            <div id="external-events">
+                                <h4>Draggable Events</h4>
+                                <div class="fc-event ui-draggable ui-draggable-handle">My Event 1</div>
+                                <div class="fc-event ui-draggable ui-draggable-handle" style="z-index: auto; left: 0px; top: 0px;">My Event 2</div>
+                                <div class="fc-event ui-draggable ui-draggable-handle">My Event 3</div>
+                                <div class="fc-event ui-draggable ui-draggable-handle" style="z-index: auto; left: 0px; top: 0px;">My Event 4</div>
+                                <div class="fc-event ui-draggable ui-draggable-handle">My Event 5</div>
+                                <p>
+                                    <input type="checkbox" id="drop-remove">
+                                    <label for="drop-remove">remove after drop</label>
+                                </p>
+                            </div>
+                            <!--<form class="inline-form">
+                                <input type="text" value="" class="form-control" placeholder="Event Title..." id="event_title"/><br/>
+                                <a href="javascript:;" id="event_add" class="btn default">
+                                    Add Event </a>
+                            </form>
+                            <hr/>
+                            <div id="event_box">
+                            </div>
+                            <label for="drop-remove">
+                                <input type="checkbox" id="drop-remove"/>remove after drop </label>
+                            <hr class="visible-xs"/>-->
+
+                        <!-- END DRAGGABLE EVENTS PORTLET-->
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <div id="calendar_container" class="">
+                            <?php
+                                use yii\web\JsExpression;
+
+
+                            $JSEventClick = '
+                                    function(calEvent, jsEvent, view) {
+
+                                    alert("Event: " + calEvent.title);
+                                    alert("Coordinates: " + jsEvent.pageX + "," + jsEvent.pageY);
+                                    alert("View: " + view.name);
+
+                                    // change the border color just for fun
+                                    $(this).css("border-color", "red");
+
+                                }';
+                            ?>
+                            <?=
+                             \yii2fullcalendar\yii2fullcalendar::widget(array(
+                                'events'=> $events,
+                                'options' => [
+                                    'lang' => 'es',
+                                    'droppable' => true,
+                                    'selectable' => true,
+                                    'selectHelper' => true,
+                                    'droppable' => true,
+                                    'editable' => true,
+                                    //'drop' => new JsExpression($JSDropEvent),
+                                    //'select' => new JsExpression($JSCode),
+                                    'eventClick' => new JsExpression($JSEventClick),
+                                    'defaultDate' => date('Y-m-d')
+                                ]
+                            ));?>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- END CALENDAR PORTLET-->
+            </div>
+        </div>

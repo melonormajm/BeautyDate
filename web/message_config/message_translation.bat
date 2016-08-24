@@ -1,0 +1,1 @@
+../yii message/config config.php
