@@ -1,0 +1,21 @@
+<div data-options="dxView : { name: 'saloncrear', title: 'Para agregar mi salón' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " style="background-color: #6d5c7e;">
+        <div data-bind="dxScrollView: {}">
+            <div class="form-img-cnt">
+                <img src="images/icon.png" style="width:45%;" class="img-form" />
+            </div>
+            <div class="quienes-somos-cnt font-th">
+                <hr />
+                <div>
+                    <p>
+                        Para agregar tu sal&oacute;n y que aparezca en la aplicaci&oacute;n m&oacute;vil de BeautyDate, ingresa a beautydate.mx y reg&iacute;stralo.
+                    </p>
+                    <p class="beauty-url">
+                        www.beautydate.mx
+                    </p>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </div>
+</div>

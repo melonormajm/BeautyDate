@@ -1,0 +1,27 @@
+<div data-options="dxView : { name: 'perfil', title: 'Perfil' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } "  style="background-color: #6d5c7e;">
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif'  }"></div>
+        <div data-bind="dxScrollView: { }">
+            <div id="img-logo-cnt-register" class="form-img-cnt">
+                <img src="images/icon.png" class="img-form" />
+            </div>
+
+            <div id="validateGroup" data-bind="dxValidationGroup : {}">
+                <div class="cnt-reg-input">
+                    <div class="cont_center">
+                        <div class=" mtop-20">
+                            <span class="votacion-modal-title font-th" data-bind="text:'@UPDATE_PROFILE'"></span>
+                        </div>
+                        <div data-bind="dxTextBox: {  value : first_name, placeholder: '@NAME'}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}] }" class="input-login mtop-10" style=""></div>
+                        <div data-bind="dxTextBox: {  value : last_name, placeholder: '@LASTNAME'}" class="input-login mtop-10" style=""></div>
+                        <div data-bind="dxTextBox: {  value : username, placeholder: '@USERNAME'}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}] }" class="input-login mtop-10" style=""></div>
+                        <div data-bind="dxTextBox: {  value : email, placeholder: '@email'}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}] }" class="input-login mtop-10" style=""></div>
+                    </div>
+                </div>
+                <div class="cont_center">
+                    <div data-bind="dxButton: { text: 'Guardar', onClick: preRegister}" style="width: 100%; margin-top: 20px;" class="borderound btn-auth"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

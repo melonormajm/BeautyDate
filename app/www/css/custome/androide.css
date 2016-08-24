@@ -1,0 +1,98 @@
+﻿.round-inner{
+	position: absolute;
+	top: 4px;
+	
+
+}
+
+.left1_dig{
+    left: 11px;
+  
+}
+
+  
+.left2_dig{
+left: 7px;
+  
+}
+
+
+/*Arreglando los radiobutton*/
+#radiobtn .dx-radiobutton-checked .dx-radiobutton-icon-dot {
+    display: block;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    width: 10px;
+    height: 10px;
+    background: #fff !important;
+    content: "";
+}
+
+#radiobtn .dx-radiobutton-icon {
+    /*border: 2px solid rgba(0, 0, 0, 0.54);*/
+	border: 2px solid #fff !important;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    -webkit-transition: border-color 140ms linear 0s;
+    -moz-transition: border-color 140ms linear 0s;
+    -o-transition: border-color 140ms linear 0s;
+    transition: border-color 140ms linear 0s;
+    -webkit-transition: border-color 140ms linear 0s, none 1s linear 0s;
+    -moz-transition: border-color 140ms linear 0s, none 1s linear 0s;
+    -o-transition: border-color 140ms linear 0s, none 1s linear 0s;
+    transition: border-color 140ms linear 0s, none 1s linear 0s;
+    -webkit-transition: border-color 140ms linear 0s, none 1s linear 0s, none 1s linear 0s;
+    -moz-transition: border-color 140ms linear 0s, none 1s linear 0s, none 1s linear 0s;
+    -o-transition: border-color 140ms linear 0s, none 1s linear 0s, none 1s linear 0s;
+    transition: border-color 140ms linear 0s, none 1s linear 0s, none 1s linear 0s;
+    -webkit-transition: border-color 140ms linear 0s, none 1s linear 0s, none 1s linear 0s, none 1s linear 0s;
+    -moz-transition: border-color 140ms linear 0s, none 1s linear 0s, none 1s linear 0s, none 1s linear 0s;
+    -o-transition: border-color 140ms linear 0s, none 1s linear 0s, none 1s linear 0s, none 1s linear 0s;
+    transition: border-color 140ms linear 0s, none 1s linear 0s, none 1s linear 0s, none 1s linear 0s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+#radiobtn .dx-radiobutton-icon:before {
+    /*background-color: rgba(0, 0, 0, 0.12);*/
+	background-color: #fff !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: -50%;
+    padding: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    content: '';
+    pointer-events: none;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+#radiobtn .dx-radiobutton-checked .dx-radiobutton-icon {
+    /*border-color: #6b5a7c;*/
+	border-color: #fff !important;
+}
+#radiobtn .dx-radiobutton-checked .dx-radiobutton-icon:before {
+    /*background-color: rgba(0, 188, 212, 0.12);*/
+	background-color: #fff !important;
+}
+
+
+#radiobtn .dx-state-disabled .dx-radiobutton-icon {
+    /*border-color: rgba(0, 0, 0, 0.26);*/
+	border-color: #fff !important;
+	
+}
+#radiobtn .dx-state-disabled .dx-radiobutton-checked .dx-radiobutton-icon:after {
+    /*background-color: rgba(0, 0, 0, 0.26);*/
+	border-color: #fff !important;
+}

@@ -1,0 +1,18 @@
+<div data-options="dxView : { name: 'settings', title: '' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible }"></div>
+        <div style="padding:5px">
+            <h3 data-bind="text: '@SITEURL'"></h3>
+            <!--<div data-bind="dxTextBox: { value: urlsitio, placeholder: '@HTTP'}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}] }"></div>-->
+            <div data-bind="dxRadioGroup: { dataSource: [ {text: 'http://api.beautydate.softok2.com'}, {text: 'http://192.168.172.1/beautydate/api/web/index.php'}, {text: 'http://api.beautydate.mx'}, {text: 'http://localhost/beautydate/api/web/index.php'}, {text: 'http://192.168.4.234/beautydate/api/web/index.php'} ], value: urlsitio}"></div>
+            <h2>Teclee una diferente</h2>
+            <div data-bind="dxTextBox: {value: especificaUrl }"></div>
+
+            <!--<h3 data-bind="text: '@AUTHTYPE'"></h3>
+            <div data-bind="dxRadioGroup:{dataSource: [{ text: 'Facebook' },{ text: '@Sitio' }],layout:'horizontal', selectedIndex: 0, value: authType}" style="margin-top:10px;">
+            </div>-->           
+            <div data-bind="dxButton: { text: '@SAVE', onClick: saveCfg }" class="btnbd"></div>
+            <div data-bind="dxButton: { text: 'Clear local settings', onClick: clearCfg }" class="btnbd"></div>
+        </div>
+    </div>
+</div>

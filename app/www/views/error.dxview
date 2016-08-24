@@ -1,0 +1,19 @@
+<div data-options="dxView : { name: 'error', title: '@informacion' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " style="background-color: #6d5c7e;">
+        <div class="quienes-somos-cnt font-th" style="margin-top:40px;">
+            <hr />
+            <div>
+                <p data-bind="text: errdsc">
+                </p>
+                <p>
+                    Chequee la conexi&oacute;n a Internet.
+                </p>
+            </div>
+            <hr /> 
+        </div>
+        <div style="text-align:center;">
+            <div data-bind="dxButton: { text: 'Ir a configuracion', onClick: goSettings, visible: Appsalonbook.config.app.debug }" class="borderound btn-auth"></div>
+        </div>
+
+    </div>
+</div>

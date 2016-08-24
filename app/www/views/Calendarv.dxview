@@ -1,0 +1,11 @@
+<div data-options="dxView : { name: 'Calendarv', title: 'Selecione el dia' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " > 
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible }"></div>
+        <div data-bind="dxScrollView: { }">
+            <div style="text-align:center; /*padding:5px;*/">
+                <div data-bind="dxCalendar: { onValueChanged: onValueChange, width: 'auto'}"></div>
+                <div data-bind="dxButton: { text: 'Siguiente', onClick: timeForm, visible: nextVisible }" style="text-align:center;width:100%; margin-top:10px;"></div>
+            </div>
+        </div>
+    </div>
+</div>

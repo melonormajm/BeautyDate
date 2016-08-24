@@ -1,0 +1,60 @@
+ <div data-options="dxView : { name: 'home', title: '@salones'  } ">
+    <div class="home-view" data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxCommand: { id: 'create', title: 'Seach', onExecute: searchBtnHandler, icon: 'search' } "></div>
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif'}"></div>
+        <!--<div data-bind="dxLoadPanel: { message: '', visible: loadPanelVisible, indicatorSrc: 'images/beauty-loader.gif', width: '100%', height: '100%', showPane: false, shadingColor: 'rgb(178,198,211)'}"></div>-->
+        <!-- <div data-bind="visible: searchVisibleFlag">
+             <div style="margin-top:30px; margin-left:5px;margin-right:5px;">
+                 <div data-bind="dxTextBox: {placeholder: '@NOMBRE_SALON', value: name}"></div>
+             </div>
+             <div style="margin-top: 30px;">
+                 <h2 data-bind="text: '@CATEGORIAS'" style="text-align:center;"></h2>
+                 <div data-bind="foreach: categories">
+                     <div style="float:left; width: 70px;text-align:center; padding:10px 10px 10px 10px;" data-bind="click: $parent.searchByCateg">
+                         <img data-bind="attr:{src : thumbnail}" />
+                     </div>
+                 </div>
+             </div>
+
+             <div data-bind="dxButton: { text: 'Buscar', onClick: search }" style="width:100%;">
+             </div>
+
+         </div>
+         -->
+        <div data-bind="dxPopup:{visible: showSearch, title: 'Buscar', showTitle: false, fullScreen:false, closeOnOutsideClick: true,height: function() { return 150; } }">
+            <div data-bind="dxTextBox: {placeholder: 'Nombre del salon', value: searchQuery}"></div>
+            <div style="margin-top:30px; text-align:center;">
+                <div data-bind="dxButton: { text: 'Buscar', onClick: preFindQuery}" class="btn-reservar" style="float: left; width:46%"> </div>
+                <div data-bind="dxButton: { text: 'Cancelar', onClick: resetSearch}" class="btn-cancel" style="float: right; width: 46%;"> </div>
+            </div>
+        </div>
+        <div data-bind="dxList: { dataSource: dataSourceSalon, noDataText: '@No_display_data_salon', width: '100%', scrollingEnabled: true, visible: listVisibleFlag, indicateLoading: false}" style="padding-right:20px;">
+            <div data-options="dxTemplate : { name: 'item' } " data-bind="dxAction: '#itemsalonview/{id}'" style="position: relative;" class="list-item">
+                <div>
+                    <img data-bind="attr: { src: $root.displayImg(imagenes)}" style="" class="img-salon-list" />
+                    <!--<img data-bind="attr: { src: thumbnail ? thumbnail : 'images/no_image.png' }" style="" class="img-salon-list" />-->
+                    <div class="fav" data-bind="visible:  $root.IsFavorite(clienteSalonFavoritos)">
+                        <div class="fav-img" data-bind="visible:  $root.IsFavorite(clienteSalonFavoritos)"></div>
+                    </div>
+                </div>
+                <div data-bind="text: nombre" style="font-weight:bold; margin-top:0px;" class="name-salon-list"></div>
+                <div class="name2-cnt">
+                    <span data-bind="text:'SALON'" class="name2-salon-list font-th"></span>
+                    <!--<hr class="hr-salon-list" />-->
+                </div>
+
+                <div data-bind="dxProgressBar: { value: evaluacion != null ? evaluacion : 1, showStatus: false, min: 0, max: 5, height: '5px' }" class="progres-salon-rate"></div>
+                <!--<div class="start_class" data-bind="html:$root.renderRating(evaluacion)">-->
+                <div class="img-categ-in-salon-cnt-list" data-bind="html: $root.displayCateg(servicios)" style=""></div>
+
+                <div style="clear:left;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div data-options="dxView : { name: 'home', title: 'Salones', orientation: 'landscape' } ">
+    <div class="home-view" data-options="dxContent : { targetPlaceholder: 'content' } " style="background-color:white;">
+        Joder
+    </div>
+</div>-->

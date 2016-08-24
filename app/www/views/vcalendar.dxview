@@ -1,0 +1,29 @@
+<div data-options="dxView : { name: 'vcalendar', title: '@SELECIONA_DIA' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <!--<div data-bind="dxCommand: { id: 'add', title: 'Siguiente', onExecute: timeForm, visible: nextVisible}"></div>-->
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif' }"></div>
+        <div data-bind="dxPopup:{visible: popupVisible, title: '@SELECIONA_HORA', showTitle: true, fullScreen:false, closeOnOutsideClick: true, onHiding: onHiddenPop }">
+            <div data-bind="dxList: { dataSource: timeAvailable, noDataText: '@NO_TIME_AVAILABLES',refreshingText: 'Cargando horas...', indicateLoading: false}">
+                <div data-options="dxTemplate : { name: 'item' }" data-bind="click: $parent.goDetail" class="list-item">
+                    <!--<span data-bind="text: $parent.formatTime($data)"></span>-->
+                    <div data-bind="text: Appsalonbook.Utils.formatTime($data)"></div>
+                </div>
+            </div>
+        </div>
+        <div data-bind="dxScrollView: {}">
+            
+            <div id="cnt_cal" data-bind="visible:isContentReady">
+                <div id='mycalendar'></div>
+                <div style="text-align:center">
+                    <!--<div data-bind="dxButton: { text: 'Seleciones la hora', onClick: showSelectTimePopUp, visible: nextVisible }" style="text-align:center;width:80%; margin-top:10px;" id="bybtn" class="borderound btn-ok"></div>-->
+                </div>
+            </div>
+            <div id="calendar-footer" class="my-footer">
+                <div class="my-footer-logo">
+                    <img src="images/bd_logotipo.png" style="width:50%;" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

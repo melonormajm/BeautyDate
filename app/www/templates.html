@@ -1,0 +1,17 @@
+﻿<script id="item-template1" type="text/html">
+    <div class="backcolor height100">
+        <div class="form-img-cnt">
+            <img src="images/icon.png" style="width:45%;" class="img-form" />
+        </div>
+        <div id="votacion-modal-cnt">
+            <div class="mtop-20">
+                <span class="votacion-modal-title">Por favor eval&Uacute;e su experiencia</span>
+            </div>
+            <div data-bind="dxRadioGroup: { dataSource: dataSourceRadio, value: evalValue}"></div>
+            <div style="margin-top:30px; text-align:center;">
+                <div data-bind="dxButton: { text: 'Evaluar', onClick: evalPopUp}" class="borderound bg-navy width100" style="float:none;"> </div>
+                <div data-bind="dxButton: { text: 'Mas tarde', onClick: closePopUp}" class="borderound back-redcolor width100" style="margin-top:15px;"> </div>
+            </div>
+        </div>
+    </div>
+</script>

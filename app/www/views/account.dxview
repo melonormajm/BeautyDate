@@ -1,0 +1,37 @@
+<div data-options="dxView : { name: 'account', title: '' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' }" >
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible }"></div>
+        <div data-bind="visible: isContentReady">
+            <div data-bind="dxScrollView: { }">
+                <div class="dx-fieldset">
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: 'Nombre de Usuario'"></div>
+                        <div class="dx-field-value" data-bind="text: username"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: 'Correo'"></div>
+                        <div class="dx-field-value" data-bind="text: email"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: 'ID SITIO'"></div>
+                        <div class="dx-field-value" data-bind="text: clientid"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: 'TOKEN'"></div>
+                        <div class="dx-field-value" data-bind="text: token"></div>
+                    </div>
+                </div>
+                <h2 data-bind="text:'Facebook', visible: facebinfo"></h2>
+                <div data-bind="text: redifo, visible: facebinfo">
+
+
+                </div>
+                <div style="text-align:center;">                   
+                    <div data-bind="dxButton: { text: 'Log out', onClick: logOut }" style="width: 80%;margin-top:10px;" class="borderound btn-cancel"></div>
+                </div>
+                    
+            </div>
+
+        </div>
+    </div>
+</div>

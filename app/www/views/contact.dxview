@@ -1,0 +1,18 @@
+<div data-options="dxView : { name: 'contact', title: 'Para salon' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div style="margin:5px;">
+            <p style="padding: 5px">Si tienes un salon de belleza y quieres formar parte de Beauty Date, dejenos sus datos y nosotros lo contactaremos.</p>
+            <div style="margin-top:10px;">
+                <div data-bind="dxTextBox: {value: name, placeholder: 'Nombre del salon'}"></div>
+                <div data-bind="dxTextBox: {value: propname, placeholder: 'Nombre del propietario'}" style="margin-top:10px;"></div>
+                <div data-bind="dxTextBox: {value: phone, placeholder: 'Telefono'}" style="margin-top:10px;"></div>
+                <div data-bind="dxTextBox: {value: email, placeholder: 'Correo electronico'}" style="margin-top:10px;"></div>
+                <div data-bind="dxTextArea: { }"></div>
+                <div data-bind="dxTextBox:{value: location, placeholder: 'Ubicacion'}" style="margin-top:10px;"></div>
+                <div data-bind="dxButton: { text: 'Contactar' }" style="text-align: center; width: 100%; margin-top: 20px;"></div>
+            </div>    
+        </div>
+        
+    
+    </div>
+</div>

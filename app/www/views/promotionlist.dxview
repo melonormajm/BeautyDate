@@ -1,0 +1,43 @@
+<div data-options="dxView : { name: 'promotionlist', title: 'Promociones' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif' }"></div>
+        <div id="promocionLisId" data-bind="dxList: { dataSource: dataSourcePromo, noDataText: '@No_display_data_promocion', indicateLoading: false, visible: listVisibleFlag, showScrollbar: true, scrollingEnabled: true,onContentReady: forceScroll }">
+            <!--<div data-options="dxTemplate : { name: 'item'}" data-bind="click: $parent.goCalendar" class="list-item">-->
+            <div data-options="dxTemplate : { name: 'item'}" data-bind="dxAction: '#promociondetalle/////{id}'" class="list-item">
+                <div>
+                    <h2 data-bind="text: servicio.salon.nombre" class="promo-salon-name"></h2>
+                    <div>
+                        <div class="promo-salon-it promo-salon-hr">
+                            <hr />
+                        </div>
+                        <div class="promo-salon-it">
+                            <span>SALON</span>
+                        </div>
+                        <div class="promo-salon-it promo-salon-hr">
+                            <hr />
+                        </div>
+                        <div style="clear: left;"></div>
+                    </div>
+
+                    <div class="imag-promo-cnt" style="/*padding:2%;*/ width: 100%; text-align: center;">
+                        <img data-bind="attr: { src: imagen}" />
+                    </div>
+                    <!-- <div data-bind="text: servicio.nombre">
+            </div>
+            <div>
+                <span data-bind="text: 'Disponible: '"></span>
+                <span data-bind="text: $parent.formatDate(fecha_inicio)"></span> -
+                <span data-bind="text: $parent.formatDate(fecha_fin)"></span>
+            </div>-->
+                </div>
+                <!--<div data-bind="dxButton: { text: 'Reservar', onClick: $parent.reservFn},  style:{float: 'right'}"></div>-->
+                <div data-bind="style: {clear: 'both'}"></div>
+            </div>
+        </div>
+        <!--<div class="my-footer">
+            <div class="my-footer-logo">
+                <img src="images/bd_logotipo.png" style="width:50%;" />
+            </div>
+        </div>-->
+    </div>
+</div>

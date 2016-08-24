@@ -1,0 +1,13 @@
+<div data-options="dxView : { name: 'timeSelect', title: '@SELECCIONAR_HORARIO' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible,shadingColor: '#ccc' }"></div>
+        <div style="/*padding: 5px;*/">
+            <div data-bind="dxList: { dataSource: timeAvailable, visible: isListReady}">
+                <div data-options="dxTemplate : { name: 'item' }" data-bind="click: $parent.goDetail">
+                    <span data-bind="text: $parent.formatTime($data)"></span>
+                </div>
+            </div>
+            <!--<div data-bind="dxButton: { text: '@NEXT', onClick: goDetail }"></div>-->
+        </div>     
+    </div>
+</div>

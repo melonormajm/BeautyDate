@@ -1,0 +1,15 @@
+<div data-options="dxView : { name: 'fb', title: 'fb' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+       
+        <div data-bind="dxPopup: { title: '', showTitle: true, visible: pop , contentTemplate: $('#item-template1')}">
+            
+        </div>
+       
+        <div data-bind="dxMap: { width: '100%'}"></div>
+
+        <div id="mypopcnt"></div>
+            <!--<div data-bind="dxTextBox: {value: valueTx2, onValueChanged: saveValueFix}"></div>-->
+        <div data-bind="dxButton: { text: 'Facebook',onClick: auth}" style="width: 100%; margin-top: 20px;"></div>
+        <!--<div data-bind="dxButton: { text: 'Facebook Logout', onClick: logout}" style="width: 100%; margin-top: 20px;"></div>-->
+    </div>
+</div>

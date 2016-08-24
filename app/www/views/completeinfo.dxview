@@ -1,0 +1,29 @@
+<div data-options="dxView : { name: 'completeinfo', title: '@PERFIL' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " style="background-color: #6d5c7e;">
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif'}"></div>-
+
+        <div id="img-logo-cnt-register" class="form-img-cnt">
+            <img src="images/icon.png" style="width:45%;" class="img-form" />
+        </div>
+    
+        <div id="validateGroup" data-bind="dxValidationGroup : {}">
+            <div class="cnt-reg-input">
+                <div style="padding-left:10%;padding-right:10%;">
+                    <div class="mtop-20">
+                        <span class="votacion-modal-title font-th" data-bind="text:'@PERFILDATA'"></span>
+                    </div>
+                    <div data-bind="dxTextBox: {  value : name, placeholder: '@NAME', visible: showname}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}] }" class="input-login mtop-10" style=""></div>
+                    <div data-bind="dxTextBox: {  value : username, placeholder: '@USERNAME', visible: showusername}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}] }" class="input-login mtop-10" style=""></div>
+                    <div data-bind="dxTextBox: {  value : email, placeholder: '@email', visible: showemail}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}] }" class="input-login mtop-10" style=""></div>
+                </div>
+            </div>
+            <div style="padding-left: 10%; padding-right: 10%;">
+                <div data-bind="dxButton: { text: 'Registrarse', onClick: preRegister}" style="width: 100%; margin-top: 20px;" class="borderound btn-auth"></div>
+                <div class="loginlinks">
+                    <div class="link-pass" style="width: 40%; text-align: left; float:right;"><span data-bind="dxCheckBox: {text: 'Recordarme', value: remenber}"></span></div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>

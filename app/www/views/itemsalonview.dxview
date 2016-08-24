@@ -1,0 +1,70 @@
+<!--<div data-options="dxView : { name: 'itemSalonView', title: '', phone : true} " >-->
+<div data-options="dxView : { name: 'itemsalonview', title: '@CARGANDO_SALON', disableCache: true } ">
+    <div class="details" data-options="dxContent : { targetPlaceholder: 'content' }">
+        <!--<div data-bind="dxCommand: { id: 'add', onExecute: addFavorite, visible: showAddToFavorite, iconSrc: 'images/bd_fav.png' } "></div>
+        <div data-bind="dxCommand: { id: 'fav', onExecute: removeFavorite, visible: showRemoveFromFavorite, iconSrc: 'images/bd_fav.png' } "></div>-->
+        <div data-bind="dxScrollView: {showScrollbar: 'always'}">
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif' }"></div>
+
+        <div data-bind="visible: true">
+
+            <div id="favorite-cnt" data-bind="visible: Appsalonbook.Utils.getLoginState()">
+                <div data-bind="click: addFavorite, visible: showAddToFavorite" class="fav-img-cnt">
+                    <span>Agregar a favoritos</span>
+                    <img src="images/bd_fav.png" class="img-item-salon-fav">
+
+                </div>
+                <div data-bind="click: removeFavorite, visible: showRemoveFromFavorite" class="fav-img-cnt">
+                    <span>Eliminar de favoritos</span>
+                    <img src="images/favorito.png" class="img-item-salon-fav">
+
+                </div>
+            </div>
+
+            <div class="images-salon-view-cnt" data-bind="style:{ height : heightRatio}">
+                <!--<img data-bind="attr: { src: '/images/no_image.png'}, visible: imgs.lennght == 0" style="width:100%;"  />-->
+                <!--<div data-bind="dxGallery: { dataSource: imgs, width:'100%', height: '100%', indicatorEnabled: false, showIndicator: false, noDataText: ''}">-->
+                <div data-bind="dxGallery: { dataSource: imgs, width:'100%', height: '100%', indicatorEnabled: false, showIndicator: false, noDataText: '', showNavButtons: true}">
+                    <div data-options="dxTemplate: { name: 'item' }">
+                        <img data-bind="attr: { src: $root.checkImg(url) }" style="/*width:100%;*/ height: 100%;" />
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:-30px; text-align:center;">
+                <div data-bind="dxList: { dataSource: services, scrollingEnabled: false, noDataText: '', indicateLoading: false }">
+                    <!-- <div data-options="dxTemplate : { name: 'item' } " data-bind="dxAction: '#vcalendar/{id}'">-->
+                    <div data-options="dxTemplate : { name: 'item' }" data-bind="click: $root.togglePopover" class="list-item-salon no-ltb-padding">
+                        <div data-bind="dxPopover: { width: 250, height: 'auto', target: '#target-popover-' + id, visible: $root.popoverVisible($data), closeOnOutsideClick: false, position: 'top', closeOnBackButton: true}">
+                            <p data-bind="html: $root.replaceDesc(descripcion)" class="popover-desc"></p>
+                        </div>
+                        <div class="img-serv-list">
+                            <img data-bind="attr : { src : categoria && categoria.servicio_img ? categoria.servicio_img : 'images/bd_servdefault.png' }" />
+
+                        </div>
+
+                        <div class="item-salon-name-cnt" data-bind="attr: { id : 'target-popover-' + id}">
+                            <div class="item-salon-name" data-bind="text: nombre"></div>
+                            <div>
+                                <span class="item-salon-price" data-bind=" text: precio"></span>
+                            </div>
+                        </div>
+                        <div class="item-salon-link-cnt">
+                            <div style="position:relative;">
+                                <img src="images/bd_reservar-test2.png" style="height:50px;position:absolute;right:0px;" />
+                                <span class="item-salon-link" data-bind="text: 'Reservar', click: $root.goToCalendar, visible: Appsalonbook.Utils.getLoginState()"> </span>
+								<span class="item-salon-link" data-bind="text: 'Reservar', dxAction: '#authform', visible: !Appsalonbook.Utils.getLoginState()"> </span>
+
+                            </div>
+                            <!--<div data-bind="dxButton: { text: 'Reservar'}" class="borderound btn-ok"></div>-->
+                        </div>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+                <div data-bind="dxButton: { text: 'Ver Mapa', onClick: goToMap}, visible: canShowMap" class="borderound btn-ok btn-auth mtop-20 btn-map"></div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿.round-inner{
+	float: left;
+	position: absolute;
+	top: 7px;
+	
+
+}
+
+
+.left1_dig{
+    left: 11px;
+  
+}
+
+  
+.left2_dig{
+    left: 7px;
+  
+}
+
+.item-salon-name {
+    font-size: 0.7em !important;
+}
+
+.menu-icon {
+ margin-top:0px !important;
+}
+
+.progres-salon-rate {
+margin-top:0px !important;
+}

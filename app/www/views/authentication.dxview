@@ -1,0 +1,14 @@
+<div data-options="dxView : { name: 'authentication', title: '@INICIO' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible }"></div>
+        <div style="text-align:center; margin-top:20px;">
+            <img src="images/logo.png" style=""/>
+        </div>
+        <div style="margin-top:30px; margin-left:5px;margin-right:5px;" data-bind="visible: visibleFlag">
+            <!--<h2 data-bind="text: '@INICIALIZANDO'" style="text-align:center;"></h2>
+            <div data-bind="dxProgressBar: { value: progressValue  }"></div>-->
+            <div data-bind="dxButton: { text: '@SETTINGS', onClick: goCfg, visible: enableCfgLink }" style="width:100%;"></div>
+            <div data-bind="dxButton: { text: '@VERSALONES', onClick: goSalones, visible: enableSalones }" style="width:100%; margin-top:10px;"></div>
+        </div>
+    </div>
+</div>

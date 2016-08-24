@@ -1,0 +1,56 @@
+<div data-options="dxView : { name: 'cartdetail', title: '@CARTDETAIL' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " class="details">
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, shadingColor: '#ccc', indicatorSrc: 'images/ajax-loader.gif' }"></div>
+        <div data-bind="dxScrollView: { }" id="myscroll">
+        <div  id="myscrolldiv">
+            <div data-bind="visible: isContentReady">
+                <div class="images-salon-view-cnt">
+                    <img data-bind="attr: { src : salonsrc }" style="/*width:100%;*/ height: 100%;" class="img-cart-detail" />
+                </div>
+                <div class="reserva-info-cnt">
+                    <div data-bind="text: salonname" class="reservacion-salon-name"></div>
+                    <!--<div data-bind="text: servname" class="reservacion-servicio-name"></div>-->
+                    <div class="">
+                        <!--<div style="position:relative;">-->
+                        <!--<img src="images/bd_location.png" />-->
+                        <span class="reservacion-servicio-name" data-bind="text: servname "></span>
+                        <!--</div>-->
+                    </div>
+                    <div class="row-mar-first">
+                        <span class="reservacion-key">COSTO</span>
+                        <span data-bind="text:servprice, visible: nuevo_precio" class="reservacion-value-price mar-left precio-tachado"></span>
+                        <span data-bind="text:servprice, visible: npriceflag" class="reservacion-value-price mar-left"></span>
+                        <span class="reservacion-value-price mar-left" data-bind="text: nuevo_precio, visible: nuevo_precio"></span>
+                    </div>
+                    <div class="row-mar">
+                        <span class="reservacion-key">FECHA</span>
+                        <span class="reservacion-value-time mar-left" data-bind="text:date"></span>
+                    </div>
+                    <div class="row-mar">
+                        <span class="reservacion-key">HORA</span>
+                        <span class="reservacion-value-time mar-left" data-bind="text:time"></span>
+                    </div>
+                    <div class="row-mar">
+                        <span class="reservacion-key">SILLÓN</span>
+                        <span class="reservacion-value-sillon mar-left" data-bind="text:sillon"></span>
+                    </div>
+                </div>
+                <!--<hr class="hr-reserv" />-->
+                <!--<div class="link-form-social">-->
+                <!--<div id="cart-footer" class="my-footer">-->
+                <div id="cart-footer">
+                    <div style="width:50%;float:left;">
+                        <div data-bind="dxButton: { text: '@CLEAR', onClick: doClearReserv, visible: enableClear }" style="" class="btn-olvidar"></div>
+                    </div>
+                    <div style="width:50%;float:left;">
+                        <div data-bind="dxButton: { text: '@RESERVAR', onClick: doReserv, visible: enableReserv }" style="" class="btn-reservar"></div>
+                    </div>
+                    <div style="clear:left;"></div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+</div>

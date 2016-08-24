@@ -1,0 +1,94 @@
+<div data-options="dxView : { name: 'reservList', title: 'Mis reservaciones' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif'}"></div>
+        <div data-bind="dxList: { dataSource: dataSourceReserv, noDataText: 'No tiene reservaciones pendientes', indicateLoading: false, visible: listVisibleFlag, showScrollbar: true, onContentReady: onContentReadyHandler }" id="reservation_list_id" class="myRule">
+            <div data-options="dxTemplate : { name: 'item'}" style="position:relative;" class="list-item" data-bind="click: $root.toogleDetails">
+                <div style="float: left; margin-right: 15px;">
+                    <img data-bind="attr: { src: salonsrc  ? salonsrc : 'images/no_image.png' }" style="" class="img-salon-reservacion-list" />
+
+                </div>
+                <div class="img-btn-cnt-reservation-list">
+                    <img src="images/bd_cancel.png" data-bind="click: $parent.cancelarBook, visible : $root.btnCrus" />
+
+                    <img src="images/bd_open.png" data-bind="click: $root.showDetails, attr: { id : 'img-mas-' + reservid}" class="marginleft-7" />
+
+                    <img src="images/bd_close.png" data-bind="click: $root.hideDetails, attr: { id : 'img-flecharriba-' + reservid}" style="display:none;" class="marginleft-7" />
+
+
+                </div>
+                <div data-bind="text: salonname" class="name-salon-reservacion-list"></div>
+
+                <div class="servio-resrvacion-cnt-list">
+                    <div style="position: relative;">
+
+                        <div class="servicio-name reservacion-servicio-name" data-bind="text: servname "></div>
+
+                    </div>
+                </div>
+                <div class="reservacion-details-cnt reservacion-details-cnt-hide" data-bind="attr:{ id: 'reserv-cnt-' + reservid}" style="display:none;">
+                    <div class="row-mar">
+                        <div class="reservacion-key">COSTO</div>
+
+                        <span data-bind="text:precio, attr:{class: nuevo_precio ? 'reservacion-value-price mar-left precio-tachado' : 'reservacion-value-price mar-left' }"></span>
+                        <span class="reservacion-value-price mar-left" data-bind="text: nuevo_precio, visible: nuevo_precio != ''"></span>
+                    </div>
+                    <div class="row-mar">
+                        <div class="reservacion-key">FECHA</div>
+                        <div class="reservacion-value-time mar-left" data-bind="html: $root.formatDate(date)"></div>
+                    </div>
+                    <div class="row-mar">
+                        <div class="reservacion-key">HORA</div>
+                        <div class="reservacion-value-time mar-left" data-bind="text:Appsalonbook.Utils.formatTime(hora)"></div>
+                    </div>
+                    <div class="row-mar">
+                        <div class="reservacion-key">SILLÓN</div>
+                        <div class="mar-left"><span class="reservacion-value-sillon" data-bind="text:sillon"></span></div>
+                    </div>
+                    <div data-bind="dxButton: { text: 'Ver Mapa', onClick: $root.goToMap}, visible: $root.canShowMap($data)" class="borderound btn-ok btn-auth mar-top10 btn-map"></div>
+
+                </div>
+                <div style="clear:both"></div>
+
+            </div>
+        </div>
+        <div data-bind="dxPopup:{visible: popupVisible, title: 'Detalles', showTitle: true, fullScreen:false, closeOnOutsideClick: true, }">
+            <div data-bind="dxScrollView: { }">
+                <div class="dx-fieldset">
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: 'Salon'"></div>
+                        <div class="dx-field-value" data-bind="text: reservSalon"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: 'Servicio'"></div>
+                        <div class="dx-field-value" data-bind="text: reservServ"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: 'Fecha'"></div>
+                        <div class="dx-field-value" data-bind="text: reservFecha"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: 'Precio'"></div>
+                        <div class="dx-field-value" data-bind="text: reservPrecio"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: 'Estado'"></div>
+                        <div class="dx-field-value" data-bind="text: reservEstado"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: 'Direccion'"></div>
+                        <div class="dx-field-value" data-bind="text: reservDir"></div>
+                    </div>
+
+                </div>
+                <div data-bind="dxButton: { text: '@CONFIRM', onClick: confirmBook, visible: isCurrentReadyToConfirm}" style="" class="borderound btn-ok"> </div>
+                <div data-bind="dxButton: { text: '@CANCELAR', onClick: cancelarBook, visible: isCurrentReadyToCancel}" style="" class="borderound btn-cancel"> </div>
+            </div>
+        </div>
+        <div data-bind="dxPopup:{visible: popupEvalVisible, title: 'El servicio fue?', showTitle: true, fullScreen:false, closeOnOutsideClick: true,height: function() { return $(window).height() * 0.6 } }">
+            <div data-bind="dxRadioGroup: { items: [ {text: 'Excelente', value: 5}, {text: 'Bueno', value: 4}, {text: 'Regular', value: 3}, {text: 'Malo', value: 2}], value: evalValue}"></div>
+            <div style="margin-top:30px; text-align:center;">
+                <div data-bind="dxButton: { text: 'Evaluar', onClick: evaluate}" class="btn-reservar" style="float:none;"> </div>
+            </div>
+        </div>
+    </div>
+</div>

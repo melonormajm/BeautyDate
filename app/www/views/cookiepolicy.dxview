@@ -1,0 +1,137 @@
+<div data-options="dxView : { name: 'cookiepolicy', title: '@cookiepolicy' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxScrollView: {}">
+            <!-- <div class="form-img-cnt">
+                 <img src="images/icon.png" style="width:45%;" class="img-form" />
+             </div>
+             <div class="quienes-somos-cnt font-th">
+                 <hr />
+                 <div>
+                     <p>
+                         Aqui podemos poner los Terminos de uso y la politica de privacidad
+                     </p>b
+                 </div>
+                 <hr />
+             </div>-->
+            <div class="police-cnt">
+                <p>El presente aviso de privacidad (el “<span class="bold">Aviso</span>”) le informa sobre la obtenci&oacute;n, uso y divulgaci&oacute;n de datos personales por parte de BeautyDate (“<span class="bold">BeautyDate</span>” o “<span class="bold">nosotros</span>”). El presente Aviso es aplicable a los usuarios y consumidores (en adelante “<span class="bold">usted</span>”) de los sitios web, aplicaciones y cualquier otro servicios relacionado exclusivamente a México, de BeautyDate (los “<span class="bold">Sitios</span>”).</p>
+
+                <p>Otros terceros, tales como salones de belleza con los cuales usted reserva a trav&eacute;s de nuestros Sitios, así como redes sociales que usted utiliza para conectarse a nuestros Sitios Web, podr&aacute;n a su vez obtener, usar y compartir sus datos personales. El presente Aviso no cubre los servicios de dichos terceros. Para mayor informaci&oacute;n sobre las pol&iacute;ticas de privacidad de dichos terceros, por favor consulte con ellos directamente.</p>
+
+                <h3>DATOS PERSONALES QUE OBTENEMOS</h3>
+                <p>Nosotros obtenemos sus datos personales de distintas maneras a trav&eacute;s de nuestros Sitios. Nosotros usamos sus datos personales para, entre otras finalidades, brindarle el servicio y mejorar la calidad de nuestros Sitios, as&iacute; como para personalizar su experiencia. Nosotros podremos obtener de usted los siguientes datos personales:</p>
+                <ul class="nobullet">
+                    <li><span class="bold">a. Datos de identificaci&oacute;n:</span> nombre y apellidos. </li>
+                    <li><span class="bold">b. Datos de contacto:</span> correo electr&oacute;nico y teléfonos (incluyendo su número celular).</li>
+                    <li><span class="bold">d. Informaci&oacute;n sobre su uso y experiencia:</span> Esta informaci&oacute;n podr&aacute; incluir respuestas a cuestionarios, demografía, zona principal para ir a salones de belleza, detalles de reservaciones a salones de belleza actuales y previos, salones de belleza favoritos, solicitudes especiales a salones de belleza, y otra informaci&oacute;n que usted proporcione en nuestros Sitios.</li>
+                    <li><span class="bold">e. Datos de terceros:</span> datos de contacto de las personas que usted adiciona a, o notifica de, sus reservaciones a salones de belleza a través de nuestros Sitios.</li>
+                    <li><span class="bold">f. Informaci&oacute;n y datos m&oacute;viles:</span> Si usted utiliza nuestra aplicaci&oacute;n m&oacute;vil, podremos adem&aacute;s obtener el ID de su dispositivo m&oacute;vil, su geo-localizaci&oacute;n, y la ubicaci&oacute;n de los salones de belleza que usted selecciona. Asimismo, podremos obtener informaci&oacute;n a través de otros medios, como sitios web, aplicaciones y servicios de terceros (cada uno una “Plataforma de Terceros”), mediante los cuales usted se conecta a nuestros Sitios y combinar tal informaci&oacute;n con la que obtenemos en nuestros Sitios.</li>
+                </ul>
+                <br />
+                <p>
+                    Es de importancia notar que nuestros Sitios no obtienen de manera proactiva datos personales considerados como “datos personales sensibles”, por ejemplo informaci&oacute;n sobre su salud.
+                    Si usted nos proporciona datos personales de terceros (v.g. sus amigos, familiares) a su vez, usted debe asegurarse que todos los datos que usted proporciona a BeautyDate respecto de dichos terceros sea exacta.
+                </p>
+                <p>
+                    Cuando usted visita nuestros Sitios, algunos datos se obtienen autom&aacute;ticamente a través del uso de tecnologías como cookies o web beacons. Por ejemplo, cuando usted visita nuestros Sitios, nosotros podremos obtener de manera autom&aacute;tica su ubicaci&oacute;n, sistema operativo de su computadora, direcci&oacute;n IP, horario de acceso, tipo de navegador e idioma, así como el sitio web que usted visit&oacute; previo a visitar nuestros Sitios. Adem&aacute;s obtenemos datos sobre su uso y actividad en nuestros Sitio mediante el uso de ciertas tecnologías como:
+                </p>
+                <ul>
+                    <li><span class="bold">Cookies.</span> Nosotros podremos obtener de manera autom&aacute;tica sus datos personales mediante el uso de “cookies” y tecnolog&iacute;a similar. Los cookies son pequeños archivos de informaci&oacute;n con identificadores &uacute;nicos que residen, entre otras ubicaciones, su computador y dispositivos m&oacute;vil, en correos electrnicos que podemos enviarle, y en nuestras p&aacute;ginas web. Entre otras finalidades, los cookies nos ayudan a mejorar nuestros Sitios y su experiencia. Utilizamos cookies para observar cu&aacute;les &aacute;reas y características de nuestros Sitios son populares y para mantener el conteo de visitas a nuestros Sitios. Podremos acceder a la informaci&oacute;n contenida en los cookies ubicados en su dispositivo mediante una Plataforma de Terceros según lo permitan los términos de su acuerdo y configuraciones</li>
+                    <li><span class="bold">Web Beacons.</span> Nosotros podremos obtener sus datos personales mediante el uso de web beacons. Los web beacons son im&aacute;genes electr&oacute;nicas que pueden ser utilizadas en nuestros Sitios o en nuestros correos electr&oacute;nicos. Asimismo, podremos utilizar web beacons para proporcionar cookies, conteo de visitas, comprender en uso y la efectividad de campañas, y mostrarnos cuando usted abre un correo electr&oacute;nico y actúa de acuerdo a dicho.</li>
+                </ul>
+                <br />
+                <p>
+                    La mayor&iacute;a de los navegadores le proporcionan la opci&oacute;n de deshabilitar cookies. Sin embargo, la configuraci&oacute;n de su navegador para deshabilitar cookies generalmente impide el rendimiento del navegador y afectar&aacute; de manera adversa su experiencia al usar nuestro Sitio.
+                </p>
+                <p>
+                    <span class="bold">Señales Do-Not-Track.</span> Por el momento no empleamos tecnología que reconozca señales “do-not-track” de su navegador. Podremos subcontratar a terceros, como mercadotécnicos y socios comerciales, que puedan obtener su informaci&oacute;n en relaci&oacute;n a sus actividades en línea a través del tiempo y diversos sitios web cuando usted utiliza nuestros Sitios.
+                </p>
+                <h3>C&Oacute;MO UTILIZAMOS LOS DATOS PERSONALES QUE OBTENEMOS</h3>
+                <p>
+                    Nosotros usamos los datos personales que obtenemos a través de nuestros Sitios para las finalidades descritas en el presente Aviso o las manifestadas a usted en nuestros Sitios, o de cualquier manera en relaci&oacute;n con nuestros servicios. Por favor tome en cuenta que para proporcionarle nuestros servicios requerimos compartir ciertos datos personales suyos a salones de belleza como se describe adelante. Podemos usar sus datos personales para:
+                </p>
+                <ul>
+                    <li>
+                        Realizar y modificar sus reservaciones a salones de belleza a través de nuestros Sitios.
+                    </li>
+                    <li>
+                        Proporcionarle productos y servicios que nos solicite.
+                    </li>
+                    <li>
+                        Operar y mejor nuestros Sitios, productos y servicios.
+                    </li>
+                    <li>
+                        Entenderlo y sus preferencias para mejorar y personalizar su experiencia y disfrute al usar nuestros Sitios, productos y servicios, como el entendimiento de su historial de salones de belleza para recomendarle otros salones de belleza que podrían agradarle.
+                    </li>
+                    <li>
+                        Procesar y entregarle entradas a concursos y premios.
+                    </li>
+                    <li>Mostrarle publicidad relevante.</li>
+                    <li>Responder a sus comentarios y preguntas, y proveerle de atenci&oacute;n al cliente</li>
+                    <li>Enviarle informaci&oacute;n transaccional o no-publicitario relacionado a los productos y servicios que ha solicitado, incluyendo confirmaciones de reservaciones, recibos, notificaciones técnicas, actualizaciones, alertas de seguridad, y mensajes de atenci&oacute;n al cliente y administrativos</li>
+                    <li>Vincular o combinar sus datos personales con otros datos personales suyos que obtenemos a través de terceros para ayudarnos a entender sus necesidades y proporcionarle un mejor servicio</li>
+                    <li>Proteger, investigar e impedir actividad fraudulenta, no autorizada, o ilegal.</li>
+
+                </ul>
+                <br />
+                <p>Llevar a cabo otras finalidades las cuales le fueron manifestadas y usted consinti&oacute;. Asimismo, podremos utilizar sus datos personales para efectos de mercadotecnia. Por favor tome en cuenta que el tratamiento de sus datos personales para dichas finalidades, como se describe a continuaci&oacute;n, no es necesario para la existencia, mantenimiento y cumplimiento de nuestra relaci&oacute;n jurídica que usted pueda tener con BeautyDate en un momento específico. Estas finalidades pueden incluir comunicaciones con usted sobre concursos, ofertas, promociones, premios, eventos pr&oacute;ximos, y cualesquier otra noticia sobre los productos y servicios proporcionados por BeautyDate, los salones debelleza de BeautyDate y cualesquier otros socios seleccionados.</p>
+                <p>Usted podr&aacute; en todo momento elegir oponerse al tratamiento que realiza BeautyDate a sus datos personales por cualquier finalidad no esencial, tal como el envío de comunicaciones de publicidad. Durante el registro o el proceso de reservaci&oacute;n, si usted desea deslistarse de las comunicaciones de publicidad, por favor envíe un correo a info@beautydate.mx, indicando que no desea recibir correos promocionales por parte de BeautyDate. Debe advertir que su negativa a recibir dichas comunicaciones no le impedir&aacute; contratar los servicios que nos solicite. Sin embargo, si usted decide deslistarse, continuaremos envi&aacute;ndole correos electr&oacute;nicos transaccionales y no-promocionales, como correos sobre su cuenta en BeautyDate y nuestras relaciones comerciales en curso.</p>
+                <p>Cuando usted proporciona su número celular, usted consiente expresamente a recibir, en dicho número, llamadas directas y mensajes de texto por parte de nosotros relacionados con nuestros productos y servicios.</p>
+                <p>BeautyDate podr&aacute; almacenar y tratar sus datos personales en México.</p>
+                <h3>C&Oacute;MO COMPARTIMOS SUS DATOS PERSONALES</h3>
+                <p><span class="bold">Datos compartidos con Salones de belleza</span></p>
+                <p>Cuando usted realiza una reservaci&oacute;n a través de nuestros Sitios, su informaci&oacute;n nos es proporcionada a nosotros y a los salones de belleza en los que usted elija reservar. Para facilitar su reservaci&oacute;n, su informaci&oacute;n se comparte a dicho sal&oacute;n de belleza tal como si usted hubiese reservado vía telef&oacute;nica, correo electr&oacute;nico al sal&oacute;n de belleza, o a través del sitio web del sal&oacute;n de belleza. Si usted proporciona su número de celular, los salones de belleza podr&aacute;n enviarle mensajes de texto en relaci&oacute;n con su reservaci&oacute;n. Cuando usted realiza una reservaci&oacute;n a través de nuestros Sitios, como parte de nuestros servicios podremos adem&aacute;s compartir con los salones de belleza informaci&oacute;n adicional, como informaci&oacute;n sobre sus preferencias e historial de sal&oacute;n de belleza que obtenemos mediante las Plataformas de terceros.</p>
+                <p>Usted también tiene la opci&oacute;n de indicar sus preferencias especiales o proporcionar comentarios sobre su reservaci&oacute;n los cuales BeautyDate compartir&aacute; con el sal&oacute;n de belleza. Es de advertir que BeautyDate podr&aacute; transferir y almacenar sus datos en México o en cualquier otro país. Sin embargo, usted debe considerar que la mencionada transferencia de datos podría ser de naturaleza nacional o internacional</p>
+                <p>Podremos compartir con los salones de belleza resúmenes de retroalimentaciones por parte de los clientes. Si usted nos  proporciona comentarios sobre un sal&oacute;n de belleza a través de nuestros Sitios, estos comentarios se podr&aacute;n compartir con el sal&oacute;n de belleza respectivo. Nosotros no vinculamos sus comentarios con otra informaci&oacute;n que pueda identificarlos, pero un sal&oacute;n de belleza podr&aacute; identificarlo por sus comentarios, particularmente si usted proporciona su nombre o informaci&oacute;n de contacto dentro de los comentarios, como su correo electr&oacute;nico.</p>
+                <p>La informaci&oacute;n que usted decida compartir con un sal&oacute;n de belleza al realizar una reservaci&oacute;n en nuestros Sitios podr&aacute; ser usada por el sal&oacute;n de belleza para sus propias finalidades. BeautyDate no tiene control sobre las políticas de privacidad de los salones de belleza. Por favor contacte al sal&oacute;n de belleza directamente si usted desea conocer sobre sus políticas de privacidad.</p>
+                <h3>INFORMACI&Oacute;N QUE USTED COMPARTE SOCIALMENTE</h3>
+                <p>Nuestros Sitios podr&aacute;n permitirle conectarse y compartir sus acciones, comentarios, contenido e informaci&oacute;n de manera pública, o con amigos. Nuestros Sitios podr&aacute;n adem&aacute;s permitirle conectarse con nosotros en, compartir en, y usar Plataformas de Terceros, incluyendo aquellas en las cuales BeautyDate tiene presencia.</p>
+                <p>Por favor tome en cuenta sus necesidades personales de privacidad, así como las necesidades de privacidad de otros al elegir con quién se conecta y con quién desea compartir y publicar. Nosotros no podemos controlar la privacidad y seguridad de la informaci&oacute;n que usted elija publicar o compartir con otros. Asimismo BeautyDate no tiene control sobre las políticas de privacidad de las Plataformas de Terceros. Por favor contacte dichos sitios y servicios directamente si usted desea conocer sobre sus políticas de privacidad.</p>
+                <h3>COMPARTIENDO CON OTROS</h3>
+                <p>Nosotros no compartimos sus datos personales con terceros, salvo aquellos descritos anteriormente, y como sigue:</p>
+                <ul>
+                    <li>
+                        Podremos compartir sus datos personales cuando usted nos autorice compartir su informaci&oacute;n con otros terceros (como los salones de belleza en los cuales usted reserva a través de nuestros Sitios) para sus finalidades propias de mercadotecnia, las cuales se encuentran sujetas a políticas de privacidad de dichos terceros.
+                    </li>
+                    <li>
+                        Podremos compartir sus datos personales con afiliadas, proveedores tercerizados, consultores, y otros proveedores de servicios que trabajan para nosotros. Dichos proveedores tercerizados podr&aacute;n incluir proveedores que nos brindan servicios de detecci&oacute;n de fraude, así como a otros terceros.
+                    </li>
+                    <li>
+                        Podremos compartir datos estadísticos agregados para el mejoramiento de los servicios ofrecidos por nuestros Sitios.
+                    </li>
+                    <li>
+                        Podremos compartir sus datos personales con terceros que nos prestan servicios, como obtenci&oacute;n de datos, elaboraci&oacute;n de reportes, medici&oacute;n de respuesta a anuncios, y analizadores de sitios, así como asistencia para la entrega de mensajes relevantes de publicidad y anuncios. Dichos terceros podr&aacute;n observar, editar, o insertar sus propios cookies. Nosotros y otros proveedores tercerizados, anunciantes, y/u otros socios podr&aacute;n insertar web beacons para dichos terceros. El uso de estas tecnologías por estos terceros, así como las opciones que usted puede tener para deshabilitar cookies insertadas por estos terceros, se encuentran sujetas a sus propias políticas de privacidad, por lo que no est&aacute;n cubiertas por el presente Aviso.
+                    </li>
+                    <li>
+                        Podremos divulgar sus datos personales: (i) para el cumplimiento con la ley y para atender a requerimientos y procedimientos legales; (ii) para proteger los derechos y la propiedad de BeautyDate, sus agentes y clientes, así como otros, incluyendo para dar cumplimiento a nuestros contratos, políticas y términos de uso; y (iii) en el caso de una emergencia para proteger la seguridad personal de BeautyDate, sus clientes, o cualesquier otra persona.
+                    </li>
+                    <li>
+                        Podremos divulgar o compartir sus datos personales con un tercero en caso de venta, transferencia, enajenaci&oacute;n, o revelar todo o parte de nuestro negocio o activos a otra empresa en relaci&oacute;n con, o durante una negociaci&oacute;n de una fusi&oacute;n, financiamiento, adquisici&oacute;n, quiebra, disoluci&oacute;n, transacci&oacute;n o procedimiento.
+                    </li>
+                    <li>
+                        Asimismo, podremos compartir informaci&oacute;n agregada o desagregada con terceros a nuestra entera discreci&oacute;n.
+                    </li>
+
+                </ul>
+                <br />
+                <p>
+                    Como se señala adelante, BeautyDate podr&aacute; transferir y almacenar sus datos personales en México o en cualquier otro país. No obstante, usted debe considerar que las transferencias mencionadas anteriormente pueden ser de naturaleza nacional o internacional.
+                </p>
+                <h3>SEGURIDAD DE SUS DATOS PERSONALES</h3>
+                <p>BeautyDate toma las medidas razonables para ayudar a proteger sus datos personales en un esfuerzo para prevenir la pérdida, mal uso, acceso no autorizado, divulgaci&oacute;n, alteraci&oacute;n o destrucci&oacute;n de los mismos.</p>
+                <p><span class="bold">No asumimos responsabilidad por la divulgaci&oacute;n de sus datos personales como resultado de errores de transmisi&oacute;n, acceso no autorizado por parte de terceros, u otras causas fuera de nuestro control.</span> Usted juega un rol importante para mantener seguros sus datos personales. Usted no debe compartir con nadie su usuario, contraseña, o cualquier otra informaci&oacute;n de seguridad de su cuenta de BeautyDate. Si nosotros recibimos instrucciones usando su usuario y contraseña, consideraremos que usted ha autorizado dichas instrucciones.</p>
+                <h3>SUS DERECHOS ARCO</h3>
+                <p>Usted puede contactar a BeautyDate como se menciona m&aacute;s adelante, para ejercer sus derechos ARCO en cualquier momento, incluyendo el derecho de acceso a su informaci&oacute;n, requerir sus datos sean actualizados, rectificados o cancelados, así como a oponerse a la manera en que usamos sus datos personales (en conjunto, los "derechos ARCO"). Asimismo, nos puede contactar para solicitar revocar el consentimiento que otorg&oacute; previamente, dentro del alcance permitido por la ley.</p>
+                <h3>OPCIONES QUE TIENE PARA LIMITAR LA FORMA EN QUE USAMOS O COMPARTIMOS SUS DATOS PERSONALES</h3>
+                <p>Adem&aacute;s nosotros le ofrecemos mecanismos mediante los cuales usted podr&aacute; limitar la forma en que nosotros usamos o compartimos sus datos personales. Usted podr&aacute; en todo momento elegir oponerse al tratamiento que da BeautyDate a sus datos personales respecto de finalidades no esenciales, como el envío de comunicaciones de publicidad. Si usted desea deslistarse de nuestras comunicaciones de publicidad por favor envíe un correo a info@beautydate.mx para indic&aacute;rnoslo. Si usted decide deslistarse, continuaremos envi&aacute;ndole correos electr&oacute;nicos transaccionales y no-promocionales, como correos sobre su cuenta en BeautyDate y nuestras relaciones comerciales en curso. Usted también podr&aacute; enviar solicitudes sobre sus preferencias de contacto o modificaciones a su informaci&oacute;n, incluyendo solicitudes para deslistarse de compartir sus datos personales con terceros, a nuestra informaci&oacute;n de contacto mencionada m&aacute;s adelante.</p>
+                <p><span class="bold">Opciones de cookies.</span> La mayoría de los navegadores se encuentran configurados para aceptar cookies de manera autom&aacute;tica. Si usted así lo desea, usualmente puede elegir configurar su navegador para deshabilitar cookies y rechazarlos. Si usted desea deshabilitar o rechazar cookies, esto podría afectar ciertas características o servicios de nuestros Sitios.</p>
+                <p><span class="bold">Opciones de geolocalizaci&oacute;n en Aplicaciones.</span> La mayoría de los dispositivos m&oacute;viles le permiten desactivar los servicios de geolocalizaci&oacute;n. Para mayor informaci&oacute;n sobre c&oacute;mo desactivarlo, por favor contacte su operador de servicios o el fabricador de su dispositivo m&oacute;vil. Si usted desea desactivar los servicios de geolocalizaci&oacute;n, esto podría afectar ciertas características o servicios de nuestros Sitios.</p>
+                <h3>CONTACTO A BEAUTYDATE</h3>
+                <span class="bold">México</span> <br />
+                <p>Para ejercer sus derechos ARCO, dudas, quejas o comentarios sobre este Aviso, por favor contacte a BeautyDate vía correo electr&oacute;nico a info@beautydate.mx</p>
+                <h3>MODIFICACIONES AL PRESENTE AVISO</h3>
+                <p>BeautyDate podr&aacute; modificar o revisar el presente Aviso de tiempo en tiempo, y publicar la nueva versi&oacute;n en este sitio. Usted consiente que revisar&aacute; el presente Aviso peri&oacute;dicamente. En caso en que nosotros realicemos modificaciones al presente Aviso, cambiaremos la fecha de "Última Actualizaci&oacute;n" en la parte superior. La nueva versi&oacute;n entrar&aacute; en vigor 30 días posteriores a la publicaci&oacute;n de la nueva versi&oacute;n en nuestro sitio web. En el caso en que realicemos modificaciones sustanciales al Aviso de Privacidad, le notificaremos vía correo electr&oacute;nico y seguiremos el procedimiento como sea requerido por ley, si es requerido por ley.</p>
+            </div>
+        </div>
+    </div>
+</div>

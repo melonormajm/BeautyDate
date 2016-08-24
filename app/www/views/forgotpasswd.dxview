@@ -1,0 +1,25 @@
+<div data-options="dxView : { name: 'forgotpasswd', title: '@PASSWORD_RECOVERY' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " style="background-color: #6d5c7e;">
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif' }"></div>
+
+        <div class="form-img-cnt">
+            <img src="images/icon.png" style="width:45%;" class="img-form" />
+        </div>
+
+        <div id="validateGroup" data-bind="dxValidationGroup : {}">
+            <div class="cnt-reg-input cont_center">
+                <div>
+                    <div class="mtop-20">
+                        <span class="votacion-modal-title font-th" data-bind="text: '@FORGOT_PASSWORD'">Olvido su contrase&ntilde;a?</span>
+                    </div>
+
+                    <div data-bind="dxTextBox: {  value : email, placeholder: '@email'}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}] }" class="input-login mtop-10" style=""></div>
+                </div>
+            </div>
+            <div class="cont_center">
+                <div data-bind="dxButton: { text: '@Reset_Password', onClick: sendPassResetRequest}" style="width: 100%; margin-top: 10px;" class="borderound btn-auth"></div>
+
+            </div>
+        </div>
+    </div>
+</div>

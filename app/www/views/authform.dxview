@@ -1,0 +1,60 @@
+<div data-options="dxView : { name: 'authform', title: '@LOGINTITLE' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif' }"></div>
+        <div data-bind="dxPopup:{visible: popupVisible, title: 'Recupere su clave', showTitle: true, fullScreen:false, closeOnOutsideClick: true,height: function() { return 200; } }">
+            <!--<div data-bind="text: facbinf"></div>
+            <div data-bind="text: token"></div>
+                -->
+            <div id="email" data-bind="dxTextBox: {value: emailback, placeholder: 'correo electrónico'}" style="width:100%;" class="input-login"></div>
+            <div data-bind="dxButton: { text: 'Enviar', onClick: forgotPassword}" style="margin-top:10px; text-align:center; width: 100%;" class="borderound btn-auth"></div>
+            
+        </div>
+        <div data-bind="dxScrollView: { }">
+            <div class="backcolor">
+                <div class="form-img-cnt">
+                    <img src="images/icon.png" class="img-form" />
+                </div>
+                <div style="text-align: center;" class="auth-form-cnt cont_center">
+                    <div id="validateGroup" data-bind="dxValidationGroup : vg">
+                        <div>
+                            <div id="user" data-bind="dxTextBox: {value: username, placeholder: '@USERNAME', onValueChanged: valueChange,}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}]}" style="width:100%;" class="input-login"></div>
+
+                        </div>
+                        <div>
+                            <div id="ps" data-bind="dxTextBox: {value: passwd, placeholder: '@PASSWORD', mode: 'password', onValueChanged: valueChange}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}]}" style="margin-top: 10px; width: 100%;" class="input-login"></div>
+                        </div>
+                        <!--<div data-bind="dxButton: { text: '@Login', onClick: authenticateWait}" style="margin-top:10px; text-align:center; width: 100%;" class="borderound btn-ok btn-auth"></div>-->
+						<div data-bind="dxButton: { text: '@Login', onClick: authenticate}" style="margin-top:10px; text-align:center; width: 100%;" class="borderound btn-ok btn-auth"></div>
+                        <div class="loginlinks">
+                            <div class="link-pass" style="width: 40%; text-align: left;"><span data-bind="dxCheckBox: {text: 'Recordarme', value: remenber}"></span></div>
+                            <!--<div class="link-pass" style="width: 50%; text-align: right;"><div class="linka"><a data-bind="click: goResetPassword, text: '@olvide_mi_contrasena'"></a></div></div>-->
+                            <div class="link-pass" style="width: 60%; text-align: left; float: right;">
+                                <span class="dx-widget dx-checkbox dx-checkbox-has-text" onclick="void(0)">
+                                    <div class="dx-checkbox-container">
+                                        <span id="noimg" class="dx-checkbox-icon"></span>
+                                        <span class="dx-checkbox-text" data-bind="click: goResetPassword, text: '@olvide_mi_contrasena'" style="margin-left:0px !important;"></span>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="loginlinks" style="text-align:left;clear:both;margin-top: 0px;">
+                            <span data-bind="text: '¿Usuario nuevo? '"></span><a data-bind="click: goRegister, text: 'Registrarse'"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="img-curva" style="margin-top:0px;">
+                <img src="images/curva-small.png" class="img-curva-small" />
+            </div>
+            <div class="link-form-social">
+                <div style="/*width:50%;float:left;*/" class="cont_center">
+                    <div data-bind="dxButton: { text: '@LOGINFACEBOOK', onClick: authFB}" style="" class="btnfacebook btnsocial"></div>
+                </div>
+            </div>
+            <div data-bind="text: '@cookiepolicy_auth', dxAction: '#cookiepolicy'" class="policy cont_center" style="margin-top:10px;"></div>
+        </div>
+        </div>
+</div>

@@ -1,0 +1,6 @@
+<div data-options="dxView : { name: 'map', title: '@MAP' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif' }"></div>
+        <div data-bind="dxMap: { width: '100%', height: '100%', markers: markers, zoom: 10, onReady: mapReady }"></div>
+    </div>
+</div>

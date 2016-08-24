@@ -1,0 +1,5 @@
+<div data-options="dxView : { name: 'salir', title: '@LOGOUT_MSG' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif'}"></div>
+    </div>
+</div>

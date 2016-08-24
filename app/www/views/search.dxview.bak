@@ -1,0 +1,50 @@
+<div data-options="dxView : { name: 'search', title: '@categorias' } ">
+    <div data-bind="dxCommand: { id: 'add', title: 'Seach', action: searchBtnHandler, icon: 'search' } "></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif'}"></div>
+        <!--<div data-bind="dxLoadPanel: { message: '', visible: loadPanelVisible, indicatorSrc: 'images/beauty-loader.gif', width: '100%', height: '100%', showPane: false, shadingColor: 'rgb(178,198,211)'}"></div>-->
+        <div data-bind="visible: contentReady">
+            <div data-bind="dxPopup:{visible: showSearch, title: 'Buscar', showTitle: false, fullScreen:false, closeOnOutsideClick: true,height: function() { return 150; } }">
+                <div data-bind="dxTextBox: {placeholder: 'Nombre del salon', value: searchQuery}"></div>
+                <div style="margin-top:30px; text-align:center;">
+                    <div data-bind="dxButton: { text: 'Buscar', onClick: findQuery}" class="btn-reservar" style="float:left;width:46%"> </div>
+                    <div data-bind="dxButton: { text: 'Cancelar', onClick: resetSearch}" class="btn-cancel" style="float: right; width: 46%;"> </div>
+                </div>
+            </div>
+
+
+            <!--<div id="validateGroup" data-bind="dxValidationGroup : {}">-->
+            <!-- <div style="margin-top:30px; margin-left:5px;margin-right:5px;">
+                 <div data-bind="dxTextBox: {placeholder: '@NOMBRE_SALON', value: name}, dxValidator: { validationRules: [{ type: 'required', message: '@Campo_Requerido'}] }"></div>
+             </div>
+             <div data-bind="dxButton: { text: 'Buscar', onClick: search }" style="width:100%;margin-top:20px;">
+             </div>-->
+            <div class="img-categoria-circular-cnt" id="search-img-cnt">
+                <img class="img-circular" src="images/bd_perfil.png" style="/*border: 2px solid #b3c6d2; padding: 2px;*/" />
+            </div>
+            <!--<div data-bind="dxButton: { text: 'Limpiar filtro', onClick: resetSearch }" style="width:100%;">
+                    </div>
+                </div>-->
+            <div style="margin-top: 6px;" id="categ-cnt">
+                <!--<h2 data-bind="text: '@CATEGORIAS'" style="text-align:center;"></h2>-->
+                <div data-bind="foreach: categories">
+                    <!--<div class="imgcat" data-bind="click: $parent.searchByCateg">-->
+                    <div class="imgcat" data-bind="dxAction:'#home//{id}'">
+                        <!--<div class=" imgcat">
+                        <!--<div class="imgcat" >-->
+                        <img data-bind="attr:{src : portada_img}" style="" />
+                        <div data-bind="text: nombre" class="categ-name"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+        <div class="my-footer" data-bind="visible: showFooter" id="my-footer-cat">
+            <div class="my-footer-logo">
+                <img src="images/bd_logotipo.png" style="width:50%;" />
+            </div>
+
+        </div>
+    </div>
+</div>

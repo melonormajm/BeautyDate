@@ -1,0 +1,56 @@
+<div data-options="dxView : { name: 'votacion', title: 'Mis votos' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxLoadPanel: { message: loadPanelMessage, visible: loadPanelVisible, indicatorSrc: 'images/ajax-loader.gif' }"></div>
+        <div data-bind="dxList: { dataSource: dataSourceVotacion, noDataText: 'No tengo salones pendientes de evaluar', width: '100%', scrollingEnabled: true, indicateLoading: false, visible: listVisibleFlag}">
+            <div data-options="dxTemplate : { name: 'item' } " style="position: relative;" class="list-item back-redcolor">
+                <div style="float: left; margin-right: 15px;">
+                    <img data-bind="attr: { src: salonsrc }" style="" class="img-salon-reservacion-list" />
+                </div>
+                <div class="bt_vota" data-bind="click : $root.showPopUp">
+                    <div class="votar-btn-label">Votar</div>
+                    <img src="images/bd_vota_ico.png" />
+                </div>
+                <div data-bind="text: salonname" class="name-salon-votacion-list"></div>
+                <div data-bind="text: $root.formatDate(fecha)" class="date-salon-votacion-list twhite"></div>
+
+            </div>
+            <div data-options="dxTemplate : { name: 'item2' } " style="position: relative;" class="list-item" data-bind="attr: { 'class': $root.getClass($data)}">
+                <div style="float: left; margin-right: 15px;">
+                    <img data-bind="attr: { src: salonsrc }" style="" class="img-salon-reservacion-list" />
+                </div>
+                <div class="img-btn-cnt-reservation-list">
+                    <img src="images/bd_open.png" data-bind="click: $root.showDetails, attr: { id : 'img-voto-mas-' + reservid}" />
+                    <img src="images/bd_close.png" data-bind="click: $root.hideDetails, attr: { id : 'img-voto-flecharriba-' + reservid}" style="display:none;" />
+                </div>
+                <div data-bind="text: salonname" class="name-salon-votacion-list"></div>
+                <div data-bind="text: $root.formatDate(fecha)" class="date-salon-votacion-list"></div>
+
+                <div style="clear: both;"></div>
+                <div class="votacion-details-cnt" data-bind="attr:{ id: 'voto-eva-cnt-' + reservid}" style="display:none;">
+                    <div data-bind="dxRadioGroup: { dataSource: $root.dataSourceRadio, value: $root.getRadioValue($data)}, attr: {'id' : 'radiobtn-' + reservid}" class="radio-btn-cnt"></div>
+                    <div class="votacion-btn-cnt">
+                        <div data-bind="dxButton: { text: 'Evaluar', onClick: $root.evaluar }" class="btn-reservar btn-block"></div>
+                        <div data-bind="dxButton: { text: 'Mas tarde'}, click: $root.hideDetails" class="btn-olvidar btn-block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-bind="dxPopup:{visible: popupEvalVisible, showTitle: false, fullScreen:true, closeOnOutsideClick: true, shadingColor: 'rgb(110,92,127)', onShown: changeColorBg }" id="popupvotar">
+         <div id="cnt-vot" class="backcolor height100">
+            <div class="form-img-cnt">
+                <img src="images/icon.png" style="width:45%;" class="img-form" />
+            </div>
+            <div id="votacion-modal-cnt">
+                <div class="mtop-20">
+                    <span class="votacion-modal-title font-th">Por favor eval&Uacute;e su experiencia</span>
+                </div>
+                <div data-bind="dxRadioGroup: { dataSource: dataSourceRadio, value: evalValue}" id="radiobtn"></div>
+                <div style="margin-top:30px; text-align:center;">
+                    <div data-bind="dxButton: { text: 'Evaluar', onClick: evalPopUp}" class="borderound bg-navy width100" style="float:none;"> </div>
+                    <div data-bind="dxButton: { text: 'Mas tarde', onClick: closePopUp}" class="borderound back-redcolor width100" style="margin-top:15px;"> </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
